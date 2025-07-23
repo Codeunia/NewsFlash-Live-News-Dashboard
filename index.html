@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsflash</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Newsflash Logo" class="logo-img" />
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" onclick="fetchNews('India')">Home</a></li>
+        <li><a href="#" onclick="fetchNews('Technology')">Technology</a></li>
+        <li><a href="#" onclick="fetchNews('Business')">Business</a></li>
+        <li><a href="#" onclick="fetchNews('Sports')">Sports</a></li>
+      </ul>
+    </nav>
+    <form id="search-form">
+      <input type="text" id="search-text" placeholder="Search news..." />
+      <button type="button" id="search-button">Search</button>
+    </form>
+  </header>
+
+  <template id="template-news-card">
+  <div class="news-card">
+    <img id="news-img" src="" alt="News Image">
+    <h3 id="news-title"></h3>
+    <p id="news-desc"></p>
+    <span id="news-source"></span>
+  </div>
+</template>
+
+<main id="cardscontainer" class="news-container">
+</main>
+
+  <script src="script.js"></script>
+</body>
+</html>
